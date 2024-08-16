@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -52,14 +52,11 @@ p:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-
-
-
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .nav {
@@ -67,18 +64,12 @@ p:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap: 488px;
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    background-color: black;
-    height: 85px;
-
 
 }
 
@@ -87,8 +78,8 @@ p:hover {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 40px;
 }
 
@@ -97,11 +88,11 @@ p:hover {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
     gap: 40px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 li a {
@@ -134,8 +125,8 @@ li a {
 
 .social_icons img:hover {
     -webkit-transform: scale(1.5);
-    -ms-transform: scale(1.5);
-    transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
 
 
 }
@@ -145,11 +136,11 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .main__left {
@@ -189,8 +180,8 @@ li a {
     font-size: 16px;
     line-height: 16px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border: none;
     cursor: pointer;
     -webkit-transition: all 0.4s;
@@ -291,35 +282,60 @@ li a {
     color: #FFFFFF;
 }
 
-.artists {
-    --c: #ffffff;
-    padding-left: 800px;
-    font-weight: 400;
-    font-family: 'Audiowide', cursive;
-    line-height: 200px;
-    font-size: 79px;
-    color: #0000;
+
+.linear__animations {
+    width: 100%;
     overflow: hidden;
-    text-shadow: 0 0 var(--c), 11ch 0 var(--c);
-    -webkit-animation: l6 4s infinite linear;
-    animation: l6 4s infinite linear;
 }
 
-.artists:before {
-    content: "ARTIST ";
+.artists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 200px;
+    -webkit-animation: linear__animate 15s infinite linear;
+            animation: linear__animate 15s infinite linear;
 
 }
 
-@-webkit-keyframes l6 {
-    to {
-        text-shadow: -9ch 0 var(--c), 0ch 0 var(--c)
+.artists h4 {
+
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 79px;
+    color: #FFFFFF;
+}
+
+
+
+@-webkit-keyframes linear__animate {
+
+    0% {
+        margin-left: 100%;
+
     }
+
+    100% {
+        margin-left: -2000px;
+
+    }
+
 }
 
-@keyframes l6 {
-    to {
-        text-shadow: -9ch 0 var(--c), 0ch 0 var(--c)
+
+
+@keyframes linear__animate {
+
+    0% {
+        margin-left: 100%;
+
     }
+
+    100% {
+        margin-left: -2000px;
+
+    }
+
 }
 
 .artists__cards {
@@ -327,16 +343,21 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     row-gap: 60px;
     -webkit-column-gap: 60px;
-    -moz-column-gap: 60px;
-    column-gap: 60px;
+       -moz-column-gap: 60px;
+            column-gap: 60px;
     padding-left: 60px;
 
+}
+
+.overflow {
+    width: 100%;
+    overflow: hidden;
 }
 
 .artists__card {
@@ -351,8 +372,8 @@ li a {
 
 .artists__card:hover {
     -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .artists__card img {
@@ -365,8 +386,8 @@ li a {
     font-size: 16px;
     line-height: 24px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 20px;
     text-decoration: none;
@@ -382,11 +403,11 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
@@ -440,8 +461,8 @@ li a {
     font-weight: 400;
     line-height: 16px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     color: rgba(255, 255, 255, 0.8);
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -516,8 +537,8 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 12px;
     padding: 12px;
     border-bottom: 1px solid rgba(141, 253, 27, 1);
@@ -562,11 +583,11 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .card__info .card__web {
@@ -588,39 +609,7 @@ li a {
     border-radius: 8px;
 }
 
-.logoholder {
-    --c: #ffffff;
-    padding-left: 500px;
-    font-weight: 400;
-    font-family: 'Audiowide', cursive;
-    line-height: 100px;
-    text-wrap: nowrap;
-    word-spacing: 50px;
-    font-size: 30px;
-    color: #0000;
-    overflow: hidden;
-    text-shadow: 0 0 var(--c);
-    -webkit-animation: holder 4s infinite linear;
-    animation: holder 4s infinite linear;
-}
 
-.logoholder::before {
-    content: "LOGOHOLDER  LOGOHOLDER  LOGOHOLDER LOGOHOLDER LOGOHOLDER ";
-}
-
-@-webkit-keyframes holder {
-
-    to {
-        text-shadow: -10ch 0 var(--c)
-    }
-}
-
-@keyframes holder {
-
-    to {
-        text-shadow: -10ch 0 var(--c)
-    }
-}
 
 .partners-green {
     color: rgba(141, 253, 27, 1);
@@ -637,8 +626,8 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 
 }
 
@@ -679,8 +668,8 @@ li a {
     margin-bottom: 40px;
     margin-top: 20px;
     -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -728,40 +717,6 @@ li a {
     background-color: rgba(34, 34, 34, 0.8);
 }
 
-.team {
-    --c: hsl(0, 0%, 100%);
-    padding-left: 700px;
-    font-weight: 400;
-    font-family: 'Audiowide', sans-serif;
-    line-height: 100px;
-    text-wrap: nowrap;
-    word-spacing: 100px;
-    font-size: 79px;
-    color: #0000;
-    overflow: hidden;
-    text-shadow: 0 0 var(--c);
-    -webkit-animation: team 5s infinite linear;
-    animation: team 5s infinite linear;
-}
-
-.team::before {
-    content: "TEAM TEAM TEAM TEAM";
-}
-
-@-webkit-keyframes team {
-
-    to {
-        text-shadow: -5ch 0 var(--c)
-    }
-}
-
-@keyframes team {
-
-    to {
-        text-shadow: -5ch 0 var(--c)
-    }
-}
-
 .team__cards {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -769,9 +724,9 @@ li a {
 
     -webkit-box-pack: space-evenly;
 
-    -ms-flex-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
 
-    justify-content: space-evenly;
+            justify-content: space-evenly;
 
 }
 
@@ -779,8 +734,8 @@ li a {
     width: 320px;
     height: 552px;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     text-align: center;
 }
 
@@ -807,8 +762,8 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 12px;
 }
 
@@ -828,11 +783,11 @@ li a {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .discord__title {
@@ -867,8 +822,8 @@ li a {
     padding: 17px 30px 20px 30px;
     text-align: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 
 }
 
@@ -892,8 +847,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: space-evenly;
-    -ms-flex-pack: space-evenly;
-    justify-content: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
 }
 
 .footer__logos img {
@@ -918,15 +873,16 @@ footer {
     color: rgba(255, 255, 255, 0.9);
     text-align: start;
     -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
+        -ms-flex-align: start;
+            align-items: start;
     line-height: 60px;
 }
 
 p:hover,
 a:hover,
 h3:hover,
-h2:hover {
+h2:hover,
+input {
     color: aqua;
 }
 
@@ -942,12 +898,47 @@ p,
 h2,
 h3,
 h4,
-h5 {
+h5,
+input {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
 }
-
+.team__card,.card__social--icon a{
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
 p:hover {
     color: #ffffff;
+}
+.discord__join__button,input,a{
+    cursor: pointer;
+}
+input:active,.discord__join__button:active,.social_icons a:active{
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+}
+.social_icons:hover > :not(:hover),.artists__cards:hover > :not(:hover),.team__cards:hover > :not(:hover),.card__social--icon:hover > :not(:hover){
+    opacity: 0.4;
+}
+.team__card:hover,.card__social--icon a:hover{
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+.example {
+    display: -ms-grid;
+    display: grid;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
+    background: -o-linear-gradient(top, white, black);
+    background: linear-gradient(to bottom, white, black);
 }

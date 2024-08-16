@@ -14,19 +14,22 @@ body {
     margin: 100px auto;
 }
 
-a:hover,h3:hover {
+a:hover,
+h3:hover {
     color: aqua;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
-    transition:  0.3s;
+    transition: 0.3s;
 }
-p{
+
+p {
     transition: all 0.3s;
 }
-p:hover{
+
+p:hover {
     color: #ffffff;
 }
 
@@ -84,11 +87,13 @@ li a {
     width: 36px;
     height: 36px;
 }
-.social_icons img:hover{
+
+.social_icons img:hover {
     transform: scale(1.5);
- 
-    
+
+
 }
+
 .main__section {
     display: flex;
     align-items: center;
@@ -101,7 +106,7 @@ li a {
 }
 
 .main__title {
-    font-family: 'Audiowide',cursive;
+    font-family: 'Audiowide', cursive;
     font-size: 51px;
     line-height: 61px;
     font-weight: 400;
@@ -113,7 +118,7 @@ li a {
 
 .main__discription {
     color: rgba(255, 255, 255, 0.7);
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 16px;
     width: 340px;
@@ -195,7 +200,7 @@ li a {
 .second__right--title {
     color: rgba(141, 253, 27, 1);
     width: 546px;
-    font-family: 'DM Mono',monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 21px;
     font-weight: 400;
     line-height: 32px;
@@ -226,28 +231,41 @@ li a {
     color: #FFFFFF;
 }
 
-.artists {
-    --c: #ffffff;
-    padding-left: 800px;
-    font-weight: 400;
-    font-family: 'Audiowide',cursive;
-    line-height: 200px;
-    font-size: 79px;
-    color: #0000;
+
+.linear__animations {
+    width: 100%;
     overflow: hidden;
-    text-shadow: 0 0 var(--c), 11ch 0 var(--c);
-    animation: l6 4s infinite linear;
 }
 
-.artists:before {
-    content: "ARTIST ";
+.artists {
+    display: flex;
+    gap: 200px;
+    animation: linear__animate 15s infinite linear;
 
 }
 
-@keyframes l6 {
-    to {
-        text-shadow: -9ch 0 var(--c), 0ch 0 var(--c)
+.artists h4 {
+
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 79px;
+    color: #FFFFFF;
+}
+
+
+
+@keyframes linear__animate {
+
+    0% {
+        margin-left: 100%;
+
     }
+
+    100% {
+        margin-left: -2000px;
+
+    }
+
 }
 
 .artists__cards {
@@ -258,6 +276,11 @@ li a {
     column-gap: 60px;
     padding-left: 60px;
 
+}
+
+.overflow {
+    width: 100%;
+    overflow: hidden;
 }
 
 .artists__card {
@@ -278,14 +301,14 @@ li a {
 }
 
 .artists__card h4 a {
-    font-family: 'DM Mono',monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 16px;
     line-height: 24px;
     align-items: center;
     color: rgba(255, 255, 255, 0.9);
     margin-top: 20px;
     text-decoration: none;
-    
+
 }
 
 .artists__card h4 a:hover {
@@ -301,7 +324,7 @@ li a {
 
 .mrl__story {
     color: #FFFFFF;
-    font-family: 'Audiowide',cursive;
+    font-family: 'Audiowide', cursive;
     font-weight: 400;
     font-size: 37px;
     line-height: 46px;
@@ -347,7 +370,8 @@ li a {
     transition: all 0.5s;
     cursor: pointer;
 }
-.story__before:hover{
+
+.story__before:hover {
     color: aqua;
 }
 
@@ -421,7 +445,7 @@ li a {
     padding: 8px 16px 8px 14px;
     border: 1px solid rgb(128, 255, 1);
     background-color: rgba(141, 253, 27, 1);
-    font-family: 'DM Mono',monospace;
+    font-family: 'DM Mono', monospace;
     font-size: 28px;
     line-height: 29px;
     font-weight: 400;
@@ -429,7 +453,7 @@ li a {
 
 .phase p {
     color: rgba(141, 253, 27, 1);
-    font-family: 'DM Mono',monospace;
+    font-family: 'DM Mono', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 8px;
@@ -439,7 +463,7 @@ li a {
 }
 
 .phase h4 {
-    font-family: 'DM Mono',monospace;
+    font-family: 'DM Mono', monospace;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -458,8 +482,9 @@ li a {
 .card__info .card__web {
     margin-left: 22px;
 }
+
 .card__info p {
-    font-family: 'Inter',sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
@@ -473,31 +498,7 @@ li a {
     border-radius: 8px;
 }
 
-.logoholder {
-    --c: #ffffff;
-    padding-left: 500px;
-    font-weight: 400;
-    font-family: 'Audiowide', cursive;
-    line-height: 100px;
-    text-wrap: nowrap;
-    word-spacing: 50px;
-    font-size: 30px;
-    color: #0000;
-    overflow: hidden;
-    text-shadow: 0 0 var(--c);
-    animation: holder 4s infinite linear;
-}
 
-.logoholder::before {
-    content: "LOGOHOLDER  LOGOHOLDER  LOGOHOLDER LOGOHOLDER LOGOHOLDER ";
-}
-
-@keyframes holder {
-
-    to {
-        text-shadow: -10ch 0 var(--c)
-    }
-}
 
 .partners-green {
     color: rgba(141, 253, 27, 1);
@@ -593,35 +594,9 @@ li a {
     background-color: rgba(34, 34, 34, 0.8);
 }
 
-.team {
-    --c: hsl(0, 0%, 100%);
-    padding-left: 700px;
-    font-weight: 400;
-    font-family: 'Audiowide', sans-serif;
-    line-height: 100px;
-    text-wrap: nowrap;
-    word-spacing: 100px;
-    font-size: 79px;
-    color: #0000;
-    overflow: hidden;
-    text-shadow: 0 0 var(--c);
-    animation: team 5s infinite linear;
-}
-
-.team::before {
-    content: "TEAM TEAM TEAM TEAM";
-}
-
-@keyframes team {
-
-    to {
-        text-shadow: -5ch 0 var(--c)
-    }
-}
-
 .team__cards {
     display: flex;
-  
+
     justify-content: space-evenly;
 
 }
@@ -656,7 +631,8 @@ li a {
     justify-content: center;
     gap: 12px;
 }
-.team__card p{
+
+.team__card p {
     font-family: 'Inter', sans-serif;
     font-size: 12px;
     line-height: 19.2px;
@@ -666,22 +642,26 @@ li a {
     width: 238px;
     margin: 21px 41px 18px;
 }
-.join__discord{
+
+.join__discord {
     display: flex;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
 }
-.discord__title{
-    font-family: 'Audiowide',cursive;
+
+.discord__title {
+    font-family: 'Audiowide', cursive;
     font-weight: 400;
     font-size: 51px;
     line-height: 60.61px;
     color: rgba(255, 255, 255, 1);
 }
-.discord__title--green{
+
+.discord__title--green {
     color: rgba(141, 253, 27, 1);
 }
-.discord__info{
+
+.discord__info {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -690,17 +670,19 @@ li a {
     width: 345px;
     margin: 34px auto 35px auto;
 }
-.discord__join__button{
+
+.discord__join__button {
     display: flex;
     width: 213px;
     height: 43px;
-    background-color:rgba(141, 253, 27, 1);
+    background-color: rgba(141, 253, 27, 1);
     padding: 17px 30px 20px 30px;
     text-align: center;
-    align-items:center;
+    align-items: center;
 
 }
-.discord__join__button a{
+
+.discord__join__button a {
     color: rgba(0, 0, 0, 1);
     font-family: 'DM Mono', monospace;
     font-weight: 400;
@@ -708,22 +690,25 @@ li a {
     text-align: center;
 }
 
-footer{
+footer {
     height: 338px;
-    background-color:rgba(66, 0, 106, 1);
-    
+    background-color: rgba(66, 0, 106, 1);
+
 }
-.footer__container{
+
+.footer__container {
     padding: 101px;
     display: flex;
     justify-content: space-evenly;
 }
-.footer__logos img{
+
+.footer__logos img {
     width: 103px;
     height: 24px;
     margin-bottom: 70px;
 }
-.right__reserved{
+
+.right__reserved {
     color: rgba(255, 255, 255, 0.8);
     width: 200px;
     height: 21px;
@@ -733,25 +718,52 @@ footer{
     line-height: 21px;
 
 }
-.footer__list li{
+
+.footer__list li {
     list-style: none;
     color: rgba(255, 255, 255, 0.9);
     text-align: start;
-    align-items:start;  
+    align-items: start;
     line-height: 60px;
 }
-p:hover,a:hover,h3:hover,h2:hover {
+
+p:hover,
+a:hover,
+h3:hover,
+h2:hover,
+input {
     color: aqua;
 }
 
-a{
+a {
     text-decoration: none;
     color: inherit;
-    transition:  0.3s;
+    transition: 0.3s;
 }
-p,h2,h3,h4,h5{
+
+p,
+h2,
+h3,
+h4,
+h5,
+input {
     transition: all 0.3s;
 }
-p:hover{
+.team__card,.card__social--icon a{
+    transition: all 0.5s;
+}
+p:hover {
     color: #ffffff;
+}
+.discord__join__button,input,a{
+    cursor: pointer;
+}
+input:active,.discord__join__button:active,.social_icons a:active{
+    transform: scale(0.8);
+}
+.social_icons:hover > :not(:hover),.artists__cards:hover > :not(:hover),.team__cards:hover > :not(:hover),.card__social--icon:hover > :not(:hover){
+    opacity: 0.4;
+}
+.team__card:hover,.card__social--icon a:hover{
+    transform: scale(1.2);
 }
